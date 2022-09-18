@@ -1,0 +1,169 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* Theme 1 */
+    /* Main Backgrd*/
+    --main-backgrd-color:hsl(222, 26%, 31%);
+
+    /* Nav Bar */
+    --nav-text-color:aliceblue;
+    --nav-toggle-backgrd-color:hsl(223, 31%, 20%);
+    --nav-toggle-color:hsl(6, 63%, 50%);
+    --nav-toggle-color-hover:hsl(7, 75%, 61%);
+    --nav-toggle-shadow-color:hsl(6, 70%, 34%);
+
+    /* Screen */
+    --screen-text-color:aliceblue;
+    --screen-backgrd-color:hsl(224, 36%, 15%);
+
+    /* Num Pad */
+    --numpad-backgrd-color:hsl(223, 31%, 20%);
+
+    /* Num Btns */
+    --numpad-btns-text-color:hsl(221, 14%, 31%);
+    --numpad-btns-backgrd-color:hsl(30, 25%, 89%);
+    --numpad-btns-backgrd-shadow-color:hsl(28, 16%, 65%);
+    --numpad-btns-backgrd-hover-color:hsl(60, 11%, 98%);
+
+    /* Num18 */
+    --numpad-18-text-color:aliceblue;
+    --numpad-18-backgrd-color:hsl(6, 63%, 50%);
+    --numpad-18-backgrd-color-hover:hsl(7, 75%, 61%);
+    --numpad-18-backgrd-color-shadow:hsl(6, 70%, 34%);
+
+    /* Num 4 & 17 */
+    --numpad-4-17-text-color:aliceblue;
+    --numpad-4-17-backgrd-color:hsl(222, 26%, 31%);
+    --numpad-4-17-backgrd-color-hover:hsl(221, 19%, 48%);
+    --numpad-4-17-backgrd-color-shadow:hsl(221, 27%, 25%);
+
+    background-color: var(--main-backgrd-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    color: var(--nav-text-color);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    margin-right: 335px;
+}
+nav h3{
+    font-size: 0.9rem;
+    margin-right: 20px ;
+}
+.theme-changer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 33px;
+}
+.theme-changer span, p{
+    margin: 7px;
+}
+.tri-state-toggle input{
+    background-color: var(--nav-toggle-color);
+    box-shadow: 0px 0px 3px var(--nav-toggle-shadow-color);
+    height: 16px;
+    width: 16px;
+    margin: 3px;
+    appearance: none;
+    border-radius: 50%;
+    opacity: 0;
+}
+.tri-state-toggle input:hover{
+    cursor: pointer;
+    background-color: var(--nav-toggle-color-hover);
+}
+.tri-state-toggle{
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-toggle-backgrd-color);
+    border: 3px solid var(--nav-toggle-backgrd-color);
+    border-radius: 50px;
+}
+#btn1{
+    opacity: 1;
+}
+
+.num-area{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+    width: 550px;
+    height: 100px;
+    color: var();
+    background-color: var(--screen-backgrd-color);
+    color: var(--screen-text-color);
+    font-size: 3.2rem;
+    font-weight: bold;
+    border: 1px solid var(--screen-backgrd-color);
+    border-radius: 10px;
+    text-align: right;
+    padding:40px;
+}
+
+#num-pad{
+    background-color: var(--numpad-backgrd-color);
+    border: 1px solid var(--numpad-backgrd-color);
+    border-radius: 10px;
+    width: 550px;
+    height: 550px;
+    margin-top: 35px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+}
+#num17{
+    grid-column: 1/span 2;
+}
+#num18{
+    grid-column: 3/span 2;
+    color: var(--numpad-18-text-color);
+    background-color: var(--numpad-18-backgrd-color);
+    border: 1px solid var(--numpad-18-backgrd-color);
+    box-shadow: inset 0px -4px var(--numpad-18-backgrd-color-shadow);
+}
+#num18:hover{
+    background-color: var(--numpad-18-backgrd-color-hover);
+    border: 1px solid var(--numpad-18-backgrd-color-hover);
+}
+#num4, #num17{
+    color: var(--numpad-4-17-text-color);
+    background-color: var(--numpad-4-17-backgrd-color);
+    border: 1px solid var(--numpad-4-17-backgrd-color);
+    box-shadow: inset 0px -4px var(--numpad-4-17-backgrd-color-shadow);
+}
+#num4:hover, #num17:hover{
+    background-color: var(--numpad-4-17-backgrd-color-hover);
+    border: 1px solid var(--numpad-4-17-backgrd-color-hover);
+}
+.num-btns{
+    text-align: center;
+    font-size: 2rem;
+    color:var(--numpad-btns-text-color);
+    background-color: var(--numpad-btns-backgrd-color);
+    border: 1px solid var(--numpad-btns-backgrd-color);
+    border-radius: 10px;
+    box-shadow: inset 0px -4px var(--numpad-btns-backgrd-shadow-color);
+}
+.num-btns:hover{
+    background-color:var(--numpad-btns-backgrd-hover-color);
+    border: 1px solid var(--numpad-btns-backgrd-hover-color);
+    cursor: pointer;
+}

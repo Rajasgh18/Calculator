@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" media="screen and (max-width : 700px)" href="phone.css">
+</head>
+<body>
+    <nav>
+        <h1>Calc</h1>
+        <h3>THEME</h3>
+        <div class="theme-changer">
+            <p><span>1</span><span>2</span><span>3</span></p>
+            <div class="tri-state-toggle">
+                <input type="radio" name = 'toggle' id="btn1" data-theme="theme1" class="button">
+                <input type="radio" name = 'toggle' id="btn2" data-theme="theme2" class="button">
+                <input type="radio" name = 'toggle' id="btn3" data-theme="theme3" class="button">
+            </div>
+        </div>
+    </nav>
+    <input id="result" class="num-area" type="text" name="screen"></input>
+    <section id="num-pad">
+        <button id="num1" class="num-btns">7</button>
+        <button id="num2" class="num-btns">8</button>
+        <button id="num3" class="num-btns">9</button>
+        <button id="num4" class="num-btns">DEL</button>
+
+        <button id="num5" class="num-btns">4</button>
+        <button id="num6" class="num-btns">5</button>
+        <button id="num7" class="num-btns">6</button>
+        <button id="num8" class="num-btns">+</button>
+
+        <button id="num9" class="num-btns">1</button>
+        <button id="num10" class="num-btns">2</button>
+        <button id="num11" class="num-btns">3</button>
+        <button id="num12" class="num-btns">-</button>
+
+        <button id="num13" class="num-btns">.</button>
+        <button id="num14" class="num-btns">0</button>
+        <button id="num15" class="num-btns">/</button>
+        <button id="num16" class="num-btns">x</button>
+
+        <button id="num17" class="num-btns">RESET</button>
+        <button id="num18" class="num-btns">=</button>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

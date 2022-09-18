@@ -1,0 +1,37 @@
+body{
+   /* Theme 1 */
+    /* Main Backgrd*/
+    --main-backgrd-color:hsl(222, 26%, 31%);
+
+    /* Nav Bar */
+    --nav-text-color:aliceblue;
+    --nav-toggle-backgrd-color:hsl(223, 31%, 20%);
+    --nav-toggle-color:hsl(6, 63%, 50%);
+    --nav-toggle-color-hover:hsl(7, 75%, 61%);
+    --nav-toggle-shadow-color:hsl(6, 70%, 34%);
+
+    /* Screen */
+    --screen-text-color:aliceblue;
+    --screen-backgrd-color:hsl(224, 36%, 15%);
+
+    /* Num Pad */
+    --numpad-backgrd-color:hsl(223, 31%, 20%);
+
+    /* Num Btns */
+    --numpad-btns-text-color:hsl(221, 14%, 31%);
+    --numpad-btns-backgrd-color:hsl(30, 25%, 89%);
+    --numpad-btns-backgrd-shadow-color:hsl(28, 16%, 65%);
+    --numpad-btns-backgrd-hover-color:hsl(60, 11%, 98%);
+
+    /* Num18 */
+    --numpad-18-text-color:aliceblue;
+    --numpad-18-backgrd-color:hsl(6, 63%, 50%);
+    --numpad-18-backgrd-color-hover:hsl(7, 75%, 61%);
+    --numpad-18-backgrd-color-shadow:hsl(6, 70%, 34%);
+
+    /* Num 4 & 17 */
+    --numpad-4-17-text-color:aliceblue;
+    --numpad-4-17-backgrd-color:hsl(222, 26%, 31%);
+    --numpad-4-17-backgrd-color-hover:hsl(221, 19%, 48%);
+    --numpad-4-17-backgrd-color-shadow:hsl(221, 27%, 25%);
+}
