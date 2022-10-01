@@ -48,6 +48,7 @@ body{
     justify-content: center;
 }
 
+/* Navigation Bar */
 nav{
     color: var(--nav-text-color);
     width: 100vw;
@@ -64,6 +65,7 @@ nav h3{
     font-size: 0.9rem;
     margin-right: 20px ;
 }
+/* Nav Theme changing button */
 .theme-changer{
     display: flex;
     flex-direction: column;
@@ -99,6 +101,7 @@ nav h3{
     opacity: 1;
 }
 
+/* Number Display Screen */
 .num-area{
     display: flex;
     align-items: center;
@@ -117,6 +120,7 @@ nav h3{
     padding:40px;
 }
 
+/* Number Keypad */
 #num-pad{
     background-color: var(--numpad-backgrd-color);
     border: 1px solid var(--numpad-backgrd-color);
