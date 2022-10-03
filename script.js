@@ -35,6 +35,7 @@ for (item of buttons){
             screen.value = screenValue;
         }
         else if (buttonText == '='){
+            screenValue = eval(screenValue);
             screen.value = eval(screenValue);
         }
         else {

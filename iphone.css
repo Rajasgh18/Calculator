@@ -1,0 +1,27 @@
+nav{
+    margin-top: 40px;
+    height: 75px;
+}
+nav h1{
+    margin-right: 100px;
+}
+.tri-state-toggle input{
+    width: 12px;
+    height: 12px;
+}
+.num-area{
+    width: 315px;
+    height: 70px;
+    padding: 20px;
+    font-size: 1.8rem;
+}
+#num-pad{
+    width:315px ;
+    height: 350px;
+    gap: 1rem;
+    padding: 20px;
+    margin-top: 25px;
+}
+.num-btns{
+    font-size: 1rem;
+}
